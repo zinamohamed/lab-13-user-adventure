@@ -102,7 +102,7 @@ const pet = {
     image: 'pet.gif',
     audio: '',
     description: `
-    A pair of enormous purple toads sat gulping wetly and feasting on dead blowflies. A gigantic tortoise with a jewel-encrusted shell was glittering near the window. Poisonous orange snails were oozing slowly up the side of their glass tank, and a fat white rabbit kept changing into a silk top hat and back again with a loud popping noise. 
+    A pair of enormous purple toads sat gulping wetly and feasting on dead blowflies. It's time to pick a pet, as a matter of fact, it's time to let a pet pick you!
   `,
     choices: [{
         id: 'owl',
