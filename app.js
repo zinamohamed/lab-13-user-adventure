@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
     const stringyUser = JSON.stringify(user);
     localStorage.setItem('USER', stringyUser); // stringifying user and putting into local storage
         
-    window.location = './map/map.html';
+    window.location = './map';
 });
 // initialize state
 
