@@ -1,0 +1,34 @@
+body {
+  background-image: url('../assets/cool.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+
+}
+
+
+
+
+li a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+li a :visited {
+  text-decoration: none;
+  color: black;
+  
+  
+}
+
+li {
+  padding: 40px;
+  background: rgba(255,255,255, 0.5);
+  border: 2px 	#e3a000 solid;
+  margin: 20px;
+  
+}
+
