@@ -53,6 +53,8 @@ form.addEventListener('submit', (e) => {
     user.house = choice.house;
     user.pet = choice.pet;
     user.wand = choice.wand;
+    // use the selectionId to set the property dynamically //
+    user.completed[questId] = true;
 
     localStorage.setItem('USER', JSON.stringify(user));
 
