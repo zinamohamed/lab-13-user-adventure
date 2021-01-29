@@ -25,6 +25,10 @@ form.addEventListener('submit', (e) => {
 });
 // initialize state
 
+const audio = document.getElementById('player');
+
+audio.play();
+
 
 
 // set event listeners to update state and DOM

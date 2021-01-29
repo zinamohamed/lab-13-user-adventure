@@ -1,7 +1,7 @@
 const wand = {
     id: 'wand',
     title: 'A Trip to Ollivanders Wand Shop',
-    color: 'rgba(20,12,94, 0.4)',
+    color: 'rgba(20,12,94, 0.5)',
     map: {
         top: '17%',
         left: '37%'
@@ -49,7 +49,7 @@ const wand = {
 
 const pet = {
     id: 'pet',
-    color: 'rgba(227,160,60, 0.4)',
+    color: 'rgba(227,160,60, 0.5)',
     title: 'A Trip to The Magical Menagerie',
     map: {
         top: '31%',
@@ -62,27 +62,30 @@ const pet = {
     A pair of enormous purple toads sat gulping wetly and feasting on dead blowflies. It's time to pick a pet, as a matter of fact, it's time to let a pet pick you!
   `,
     choices: [{
-        id: 'owl',
-        description: 'Lorem Ipsum',
-        result: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-        pet: 'owl',
+        id: 'toad',
+        description: 'Peer at the poisonous orange snails.',
+        render: 'pet3.png',
+        result: 'After looking closely at the snails, you notice that one of them is actually a toad! You decide to keep it and name it Trevor.',
+        pet: 'toad',
 
     }, {
-        id: 'toad',
-        description: 'Lorem Ipsum',
-        result: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-        pet: 'toad',
+        id: 'owl',
+        description: 'Pick up a fat white rabbit.',
+        render: 'pet2.png',
+        result: 'Before you know it that fat rabbit transforms into a beautiful snowy owl. You decide to keep it to help you send letters while your away.',
+        pet: 'owl',
     }, {
         id: 'cat',
-        description: 'Lorem Ipsum',
-        result: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-        pet: 'toad',
+        description: 'Open a vast cage of sleek black rats.',
+        render: 'pet1.png',
+        result: 'At the very back of the cage you notice a fluffy orange cat that looks too full for its own good. You decide to keep it and give it a new home at Hogwarts.',
+        pet: 'cat',
     }]
 };
 
 const house = {
     id: 'house',
-    color: 'rgba(116,0,1, 0.4)',
+    color: 'rgba(210,105,30, 0.5)',
     title: ' Your Sorting Hat Ceremony',
     map: {
         top: '89%',
@@ -100,13 +103,13 @@ const house = {
     
     Not Hufflepuff! Not Ravenclaw!
     
-    Don't worry, child, I know my job.
+    Don't worry, child, I know what I ought to do.
 
-    Now tell me.... what's the best trait you think you've got?
+    Now tell me.... which of these four is most important to you?
   `,
     choices: [{
         id: 'Ravenclaw',
-        description: 'Intelligence',
+        description: 'Knowledge',
         render: 'rave.png',
         result: `
         “It'll be....Ravenclaw!!! Where those of wit and learning, will always find their kind"`,
@@ -120,7 +123,7 @@ const house = {
         house: 'HufflePuff',
     }, {
         id: 'Gryffindor',
-        description: 'Bravery',
+        description: 'Faith',
         render: 'gryf.png',
         result: `
         “It'll be....Gryffindor!!! Where dwell the brave at heart. Their daring nerve and chivalry set Gryffindors apart."`,
