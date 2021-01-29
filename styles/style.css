@@ -55,7 +55,7 @@ h2 {
 }
 
 
-form {
+.main-form {
       display: flex;
       justify-content: center;
       border: 2px solid #e3a000;
@@ -66,11 +66,6 @@ form {
 
   }
 
-.quest-section img {
-      width: 500px;
-      height: 300px;
-
-  }
 .letter {
     width: 350px;
     height: 250px;

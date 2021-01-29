@@ -50,6 +50,7 @@ const pet = {
         left: '5%'
     },
     image: 'pet.gif',
+    background: 'magical.jpg',
     audio: '',
     description: `
     A pair of enormous purple toads sat gulping wetly and feasting on dead blowflies. It's time to pick a pet, as a matter of fact, it's time to let a pet pick you!
@@ -81,6 +82,7 @@ const house = {
         left: '44%'
     },
     image: 'hat.gif',
+    background: 'sorting.jpg',
     audio: '',
     description: `
     Are you afraid of what you'll hear?

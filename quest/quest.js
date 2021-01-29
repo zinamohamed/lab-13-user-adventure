@@ -5,6 +5,8 @@ const h1 = document.querySelector('h1');
 const img = document.querySelector('section img');
 const p = document.querySelector('p');
 const form = document.querySelector('form');
+var body = document.getElementsByTagName('body')[0];
+
 
 const params = new URLSearchParams(window.location.search);
 
@@ -15,6 +17,7 @@ const quest = findById(questData, questId);
 h1.textContent = quest.title;
 p.textContent = quest.description;
 img.src = `../assets/${quest.image}`;
+body.style.backgroundImage = `url(../assets/${quest.background})`;
 
 for (let choice of quest.choices) {
     const radio = document.createElement('input');
