@@ -10,10 +10,9 @@ form.addEventListener('submit', (e) => {
 
     const user = { 
         name: formData.get('name'),
-        icon: formData.get('icon'),
-        house: '',
-        wand: '',
-        pet: '',
+        house: 'house',
+        wand: 'wand',
+        pet: 'pet',
         completed: {},
 
     };

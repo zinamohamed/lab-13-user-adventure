@@ -71,12 +71,22 @@ form.addEventListener('submit', (e) => {
     resultsSpan.textContent = choice.result;
     // use the selectionId to set the property dynamically //
     user.completed[questId] = true;
+    
+    
+    
+    
+    if (choice.house) {
+        user.house = choice.house;
+    }   
+    if (choice.pet) {
+        user.pet = choice.pet;
+    }   
+   
+    if (choice.wand) {
+        user.wand = choice.wand;
+    }
+    
     localStorage.setItem('USER', JSON.stringify(user));
-    
-    user.house = choice.house;
-    user.pet = choice.pet;
-    user.wand = choice.wand;
-    
     
     resultsContainer.style.display = 'flex';
     questContainer.style.display = 'none';
