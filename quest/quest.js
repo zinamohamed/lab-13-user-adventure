@@ -6,6 +6,11 @@ const img = document.querySelector('section img');
 const p = document.querySelector('p');
 const form = document.querySelector('form');
 var body = document.getElementsByTagName('body')[0];
+const questContainer = document.getElementById('quest-section');
+const resultsContainer = document.getElementById('results-section');
+
+resultsContainer.style.display = 'none';
+
 
 
 const params = new URLSearchParams(window.location.search);
@@ -36,10 +41,14 @@ for (let choice of quest.choices) {
 }
 
 const button = document.createElement('button');
+const newAdventure = document.getElementById('adventure');
+const resultsSpan = document.getElementById('results-span');
+
+
 
 button.textContent = 'Submit';
 
-form.appendChild(button);
+form.appendChild(button, newAdventure);
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -56,14 +65,20 @@ form.addEventListener('submit', (e) => {
     user.house = choice.house;
     user.pet = choice.pet;
     user.wand = choice.wand;
+    resultsSpan.textContent = choice.result;
     // use the selectionId to set the property dynamically //
     user.completed[questId] = true;
-
     localStorage.setItem('USER', JSON.stringify(user));
 
-    window.location = '../map';
-
     
+    
+    resultsContainer.style.display = 'flex';
+    questContainer.style.display = 'none';
+    
+});
+
+newAdventure.addEventListener('click', () => {
+    window.location = '../map';
 });
 
 

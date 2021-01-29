@@ -15,28 +15,28 @@ const wand = {
         id: 'basilisk',
         description: 'The Basilisk',
         result: `
-          Curious....very curious...looks like it'll be 10 3/4 inches made with the finest holly wood...and ahh yes very fitting....crafted with a phoenix feather core.
+          Curious....very curious...looks like it'll be 10 3/4 inch wand made with the finest holly wood...and ahh yes very fitting....crafted with a phoenix feather core.
       `,
         wand: 'phoenix feather',
     }, {
         id: 'dementor',
         description: 'Dementors',
         result: ` 
-        Curious....very curious...looks like it'll be 14 inches made with the finest vine wood...and ahh yes very fitting....crafted with a dragon heartstring core.         
+        Curious....very curious...looks like it'll be 14 inch wand made with the finest vine wood...and ahh yes very fitting....crafted with a dragon heartstring core.         
       `,
         wand: 'dragon heartstring',
     }, {
         id: 'Inferis',
         description: 'Inferis',
         result: `
-        Curious....very curious...looks like it'll be 12 inches made with the finest ash wood...and ahh yes very fitting....crafted with a unicorn hair core.  
+        Curious....very curious...looks like it'll be 12 inch wand made with the finest ash wood...and ahh yes very fitting....crafted with a unicorn hair core.  
       `,
         wand: 'unicorn hair',
     }, {
         id: 'acromantula',
         description: 'Acromantula',
         result: `
-        Curious....very curious...looks like it'll be 11 inches made with the finest hornbeam wood...and ahh yes very fitting....crafted with a horned serpent horn core. 
+        Curious....very curious...looks like it'll be 11 inch wand made with the finest hornbeam wood...and ahh yes very fitting....crafted with a horned serpent horn core. 
       `,
         wand: 'horned serpent core',
     }]
