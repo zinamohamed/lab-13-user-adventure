@@ -67,14 +67,15 @@ form.addEventListener('submit', (e) => {
 
     questImage.src = `../assets/${choice.render}`;
 
-    user.house = choice.house;
-    user.pet = choice.pet;
-    user.wand = choice.wand;
+    
     resultsSpan.textContent = choice.result;
     // use the selectionId to set the property dynamically //
     user.completed[questId] = true;
     localStorage.setItem('USER', JSON.stringify(user));
-
+    
+    user.house = choice.house;
+    user.pet = choice.pet;
+    user.wand = choice.wand;
     
     
     resultsContainer.style.display = 'flex';
@@ -87,6 +88,7 @@ form.addEventListener('submit', (e) => {
 newAdventure.addEventListener('click', () => {
     window.location = '../map';
 });
+
 
 
 
