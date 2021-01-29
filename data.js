@@ -1,6 +1,7 @@
 const wand = {
     id: 'wand',
     title: 'A Trip to Ollivanders Wand Shop',
+    color: 'rgba(20,12,94, 0.4)',
     map: {
         top: '17%',
         left: '37%'
@@ -14,6 +15,7 @@ const wand = {
     choices: [{
         id: 'basilisk',
         description: 'The Basilisk',
+        render: '1.png',
         result: `
           Curious....very curious...looks like it'll be 10 3/4 inch wand made with the finest holly wood...and ahh yes very fitting....crafted with a phoenix feather core.
       `,
@@ -21,6 +23,7 @@ const wand = {
     }, {
         id: 'dementor',
         description: 'Dementors',
+        render: '2.png',
         result: ` 
         Curious....very curious...looks like it'll be 14 inch wand made with the finest vine wood...and ahh yes very fitting....crafted with a dragon heartstring core.         
       `,
@@ -28,6 +31,7 @@ const wand = {
     }, {
         id: 'Inferis',
         description: 'Inferis',
+        render: '3.png',
         result: `
         Curious....very curious...looks like it'll be 12 inch wand made with the finest ash wood...and ahh yes very fitting....crafted with a unicorn hair core.  
       `,
@@ -35,6 +39,7 @@ const wand = {
     }, {
         id: 'acromantula',
         description: 'Acromantula',
+        render: '4.png',
         result: `
         Curious....very curious...looks like it'll be 11 inch wand made with the finest hornbeam wood...and ahh yes very fitting....crafted with a horned serpent horn core. 
       `,
@@ -44,6 +49,7 @@ const wand = {
 
 const pet = {
     id: 'pet',
+    color: 'rgba(227,160,60, 0.4)',
     title: 'A Trip to The Magical Menagerie',
     map: {
         top: '31%',
@@ -76,6 +82,7 @@ const pet = {
 
 const house = {
     id: 'house',
+    color: 'rgba(116,0,1, 0.4)',
     title: ' Your Sorting Hat Ceremony',
     map: {
         top: '89%',
@@ -100,24 +107,28 @@ const house = {
     choices: [{
         id: 'Ravenclaw',
         description: 'Intelligence',
+        render: 'rave.png',
         result: `
         “It'll be....Ravenclaw!!! Where those of wit and learning, will always find their kind"`,
         house: 'Ravenclaw',
     }, {
         id: 'Hufflepuff',
         description: 'Kindess',
+        render: 'huff.png',
         result: `
         “It'll be....Hufflepuff!!! Where they are just and loyal. Those patient Hufflepuffs are true & unafraid of toil"`,
         house: 'HufflePuff',
     }, {
         id: 'Gryffindor',
         description: 'Bravery',
+        render: 'gryf.png',
         result: `
         “It'll be....Gryffindor!!! Where dwell the brave at heart. Their daring nerve and chivalry set Gryffindors apart."`,
         house: 'Gryffindor',
     }, {
         id: 'Slytherin',
         description: 'Ambition',
+        render: 'slyth.png',
         result: `
         “It'll be....Slytherin!!! That's where you'll make your real friends. Those cunning folks use any means to acheive their ends"`,
         house: 'Slytherin',

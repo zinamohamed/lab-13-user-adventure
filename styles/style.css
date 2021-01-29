@@ -1,3 +1,8 @@
+@font-face {
+    src: url('../fonts/HarryP-MVZ6w.ttf');
+    font-family: harry;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,6 +10,20 @@ body {
     align-items: center;
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    font-family: harry;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+
     
 }
 
@@ -39,14 +58,7 @@ main {
 
 }
 
-.quest-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 40%;
-}
+
 
 
 h2 {
@@ -63,6 +75,8 @@ h2 {
       align-items: center;
       padding: 20px;
       margin: 30px;
+      font-family: harry;
+      text-align: center;
 
   }
 
@@ -75,6 +89,7 @@ h2 {
     box-shadow: 10px 10px 5px grey;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .main-section button {
@@ -97,7 +112,7 @@ h2 {
 
 .name {
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 3rem;
     padding: 7px 0;
     background: transparent;
     color: #e3a000;
@@ -105,11 +120,24 @@ h2 {
     border-bottom: 2px 	#e3a000 solid;
     text-decoration: none;
     margin: 10px;
+    font-family: harry;
+    text-align: center;
 }
 
 input:focus {
     outline:none;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,4 +1,9 @@
 /* add home page styles here */
+@font-face {
+  src: url('../fonts/HarryP-MVZ6w.ttf');
+  font-family: harry;
+}
+
 
 body {
   background-image: url('../assets/homebg.jpg');
@@ -6,5 +11,6 @@ body {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+  font-family: harry;
 
 }

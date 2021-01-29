@@ -1,3 +1,8 @@
+@font-face {
+  src: url('../fonts/HarryP-MVZ6w.ttf');
+  font-family: harry;
+}
+
 body {
   background-image: url('../assets/cool.jpg');
   background-repeat: no-repeat;
@@ -5,6 +10,7 @@ body {
   background-position: center center;
   background-size: cover;
   position: absolute;
+  font-family: harry;
 
 }
 
@@ -14,12 +20,14 @@ body {
 li a {
   text-decoration: none;
   color: black;
+  font-size: 2rem;
   
 }
 
 li a :visited {
   text-decoration: none;
-  color: black;
+  
+  
   
   
 }
@@ -27,6 +35,7 @@ li a :visited {
 li {
   padding: 40px;
   background: rgba(255,255,255, 0.5);
+  box-shadow: 10px 10px 5px black;
   border: 2px 	#e3a000 solid;
   margin: 20px;
   

@@ -25,6 +25,6 @@ form.addEventListener('submit', (e) => {
 });
 // initialize state
 
-document.getElementById('player').play();
+
 
 // set event listeners to update state and DOM

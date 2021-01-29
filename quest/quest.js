@@ -8,8 +8,10 @@ const form = document.querySelector('form');
 var body = document.getElementsByTagName('body')[0];
 const questContainer = document.getElementById('quest-section');
 const resultsContainer = document.getElementById('results-section');
+const questImage = document.getElementById('results-img');
 
 resultsContainer.style.display = 'none';
+
 
 
 
@@ -23,11 +25,14 @@ h1.textContent = quest.title;
 p.textContent = quest.description;
 img.src = `../assets/${quest.image}`;
 body.style.backgroundImage = `url(../assets/${quest.background})`;
+questContainer.style.backgroundColor = `${quest.color}`;
+resultsContainer.style.backgroundColor = `${quest.color}`;
+
 
 for (let choice of quest.choices) {
     const radio = document.createElement('input');
     const label = document.createElement('label');
-    const span = document.createElement('span');
+    const span = document.createElement('a');
 
     span.textContent = choice.description;
 
@@ -60,7 +65,7 @@ form.addEventListener('submit', (e) => {
     const choice = findById(quest.choices, selectionId);
     const user = JSON.parse(localStorage.getItem('USER'));
 
-   
+    questImage.src = `../assets/${choice.render}`;
 
     user.house = choice.house;
     user.pet = choice.pet;
@@ -74,11 +79,17 @@ form.addEventListener('submit', (e) => {
     
     resultsContainer.style.display = 'flex';
     questContainer.style.display = 'none';
+
+    
     
 });
 
 newAdventure.addEventListener('click', () => {
     window.location = '../map';
 });
+
+
+
+
 
 
